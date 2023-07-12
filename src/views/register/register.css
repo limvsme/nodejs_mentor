@@ -1,0 +1,75 @@
+html {
+  background-color: #a269ff;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/********** 네비 임시 날림 구현 **********/
+header {
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+header span {
+  margin-right: 10px;
+  color: white;
+}
+
+/********** 회원가입 폼 **********/
+#welcome-text {
+  text-align: center;
+  margin: 50px auto 40px auto;
+  color: white;
+  font-family: "Sansita", "Noto Sans KR", sans-serif;
+}
+
+#welcome-text > h1 {
+  font-size: 40px;
+  font-style: italic;
+  display: inline;
+}
+
+#welcome-text > span {
+  font-size: 20px;
+}
+
+#register-form {
+  width: 500px;
+  height: 630px;
+  margin: 0px auto;
+  padding: 40px 40px;
+  text-align: left;
+}
+
+#register-form > p {
+  font-size: 12px;
+}
+
+#register-button {
+  width: 100%;
+  margin: 30px 0 10px 0;
+  text-align: center;
+  display: block;
+}
+
+/********** Bulma 오버라이딩하여 커스터마이징 **********/
+.box {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3);
+  border-radius: 16px;
+}
+
+.button.is-link {
+  background-color: #a269ff;
+}
+
+.button.is-link:hover {
+  background-color: #a269ff;
+}
+
+.button.is-outlined {
+  border-color: #a269ff;
+  color: #a269ff;
+}

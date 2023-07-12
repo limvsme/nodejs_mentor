@@ -1,0 +1,56 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/********** 네비 임시 날림 구현 **********/
+header {
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+header span {
+  margin-right: 10px;
+  color: black;
+}
+
+/********** 사이트 제목 **********/
+#title-div {
+  text-align: center;
+  margin: 40px auto;
+  color: #a269ff;
+  font-family: "Sansita", "Noto Sans KR", sans-serif;
+  font-style: italic;
+}
+
+#title-div > h1 {
+  font-size: 40px;
+}
+
+/********** Box들 **********/
+#box-list {
+  width: 800px;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  width: 380px;
+  height: 200px;
+  margin: 5px 5px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3);
+}
+.box:hover {
+  cursor: pointer;
+}
+.box-color-01 {
+  background-color: #a269ff;
+}
+.box-color-02 {
+  background-color: #6454e8;
+}
+
+.title {
+  color: white;
+}

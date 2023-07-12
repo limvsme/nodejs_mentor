@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1440, initial-scale=1">
+    <title>::Is Wonderland</title>
+    <!--폰트-->
+    <link href="https://fonts.cdnfonts.com/css/sansita" rel="stylesheet">
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!--폰트어썸-->>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/37ea6036f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cart.css">
+    <script type="text/javascript" src="cart.js" defer></script>
+  </head>
+
+  <body>
+    <!--상단내비-->
+        <header id="master-header">
+            <nav class="nav-list">
+                    <ul>
+                        <li><a href="join.css">회원가입</a></li>
+                        <li><a href="login.css">로그인</a></li>
+                        <li><a href="mypage.css">마이페이지</a></li>
+                        <li><a href="cart.css">장바구니</a></li>
+                    </ul>
+             </nav>
+        </header>
+                        <h1><a href="index.html">Wonderland</a></h1>
+
+            <div id="root-container">
+              <ul class="root-ul">
+                <li class="shopping-cart">장바구니</li>
+                <li>></span>
+                <li>주문결제</li>
+                <li>></li>
+                <li>결제완료</li>
+              </ul>
+            </div>
+            
+            <!--카트 상단줄 + 카트메인 테이블-->
+            <div id="upper-container">
+              <table class="upper-table">
+                <thead>
+                  <tr>
+                    <th>
+                    <input type="checkbox" id="select-all">
+                    </th>
+                    <th>상품사진</th>
+                    <th>상품명</th>
+                    <th class="hope-price">판매가</th>
+                    <th>수량</th>
+                    <th>합계</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 장바구니에 담은 상품이 없을 때 -->
+                  <tr>
+                    <td colspan="6" class="empty-cart">장바구니에 담은 상품이 없습니다.</td>
+                  </tr>
+                  <!-- 상품이 담겼을 때 -->
+                  <tr>
+                    <td><input type="checkbox" id="select-each"></td>
+                    <td class="image-list"><img src="../../images/cart-sample.jpg" width="100px" height="100px" alt="카트 1번"></td>
+                    <td class="item-list">1차프로젝트 화이팅</td>
+                    <td class="price-list">50,000원</td>
+                    <td class="quantity-list">
+                        <i class="fa-sharp fa-solid fa-circle-minus fa-lg" style="color: #000000;"></i>
+                        <input class="quantity" size="1" value="1" min="1" max="99">
+                        <i class="fa-sharp fa-solid fa-circle-plus fa-lg" style="color: #222326;"></i>
+                    </td>
+                    <td class="total-list">100,0000원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--카트 하단줄-->
+            <div id="lower-container">
+              <ul class="cart-lowerul">
+                      <li class="lower-price">상품 구매 금액</li>                    
+                      <li class="lower-emptyprice">60,000</li>
+                      <li class="lower-unit1">원</li>                       
+                      <li class="lower-plus">+</li>                    
+                      <li class="lower-delivery">배송비</li>
+                      <li class="lower-emptydelivery">50,000</li> 
+                      <li class="lower-unit2">원</li>                       
+                      <li class="lower-total">합계</li>
+                      <li class="lower-emptytotal">65,000</li>
+                      <li class="lower-unit3">원</li> 
+              </ul>
+            </div>
+              
+            <div id="confirm-container">
+              <ul class="order-list">
+                     <li class="confirm">선택한 제품을</li>
+                     <li class="delete-item">삭제하기</li>
+                     <li class="purchase">구매하기</li>
+                     <div class="btn-parent">
+                      <button type="submit" class="confirm-btn">전체상품 구매하기</button>
+                    </div>
+              </ul>
+            </div>
+          
+          <!--페이지 버튼-->
+          <div id="page-container">
+            <nav class="pagination" role="navigation" aria-label="pagination">
+              <a class="pagination-previous is-disabled" title="This is the first page">이전</a>
+              <a class="pagination-next">다음</a>
+              <ul class="pagination-list">
+                <li>
+                  <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+                </li>
+                <li>
+                  <a class="pagination-link" aria-label="Goto page 2">2</a>
+                </li>
+                <li>
+                  <a class="pagination-link" aria-label="Goto page 3">3</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          
+          <!--임시 footer-->
+            <footer id="footer-container">
+              <ul class="footer-ul">
+                <li class="introduce"><a href="introduce.html">회사소개</a></li>
+                <li class="vertical">|</li>
+                <li class="terms"><a href="terms.html">이용약관</a></li>
+                <li class="vertical">|</li>
+                <li class="policy"><a href="policy.html">개인정보처리방침</a></li>
+                <li class="vertical">|</li>
+                <li class="cs"><a href="cs.html">고객센터</a></li>
+              </ul>
+              <div id="inform-container">
+              <span class="company-inform">(주)원더랜드 | 대표자명 : 앨리스 | 사업자등록번호 : 101-10-0101 | 통신판매업신고 : 서울강남 - 010<br>
+                    주소 : 서울특별시 강남구 선릉로 433, 신관 6층 | 고객센터 : 3401-2173 (평일 09:00 ~ 18:00, 국공휴일 휴무) | 이메일 : wonderland@elice.io <br>
+                    COPYRIGHT ⓒ WONDERLAND.ALL RIGHTS RESERVED
+              </span>
+           </div>
+        </footer>        
+  </body>
+</html>

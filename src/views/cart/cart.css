@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+} 
+@font-face {
+  font-family: 'Noto Sans thin';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+
+body {
+  color: #333333;
+  font-family: "Sansita","Noto Sans", sans-serif;
+  margin: 0 auto;
+  list-style-type: none;
+  min-width: 1200px;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.nav-list li:last-child {
+  margin-right: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 40px;
+  font-weight: 800;
+  color: #a269ff;
+  font-family: "Sansita", "Noto Sans KR", sans-serif;
+  font-style: italic;
+}
+
+#root-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: "Noto Sans thin";
+  font-size: 12px;
+  font-weight: 600;
+  color: grey;
+}
+
+.root-ul {
+  display: flex;
+  align-items: baseline;
+  flex-basis: 950px;
+  margin-bottom: 10px;
+}
+
+
+.shopping-cart {
+  font-size: 25px;
+  font-family: "Noto Sans";
+  font-weight: 800;
+  color: #333;
+}
+
+/* 빈카트 안보이게 */
+.empty-cart {
+  display: none;
+  text-align: center;
+}
+
+
+/* 카드 테이블, 카트상단줄+카트메인 */
+
+#upper-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+table.upper-table {
+  width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+thead > tr {
+  background-color: #a269ff;
+}
+
+table th {
+  color: white;
+  font-family: "Noto Sans thin";
+  font-size: 16px;
+  font-weight: 600;
+}
+tbody {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+table td {
+  font-family: "Noto Sans";
+  font-weight: 600;  
+}
+
+table.upper-table td,
+table.upper-table th {
+  padding-top: 10px;
+}
+
+td:not(.image-list) {
+  vertical-align: middle;
+}
+
+
+/* 카트 하단줄 */
+
+
+#lower-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.cart-lowerul {
+  display: flex;
+  width: 1200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #a269ff;
+  font-size: 16px;
+  color: white;
+  justify-content: flex-end;
+  align-items: baseline;
+  letter-spacing: 1px;
+}
+
+.lower-price,
+.lower-delivery,
+.lower-plus,
+.lower-total {
+  margin-right: 10px;
+}
+
+.lower-plus {
+  margin-left: 10px;
+}
+.lower-unit2 {
+  margin-right: 20px;
+}
+
+.lower-emptytotal {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.lower-unit3 {
+  margin-right: 20px;
+}
+
+.lower-emptytotal {
+  margin-right: 2px;
+}
+
+#confirm-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.order-list {
+  display: flex;
+  width: 1200px;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.order-list > span {
+  padding-bottom: 10px;
+}
+
+.confirm,
+.delete-item {
+  margin-right: 10px;
+}
+.confirm {
+  margin-left: 10px;
+}
+
+.delete-item {
+  color: blue;
+  cursor: pointer;
+}
+
+.purchase {
+  color: #a269ff;
+  cursor: pointer;
+}
+
+    /* 체크박스 디자인 */
+
+    input[type="checkbox"] {
+        appearance: none;
+        min-width: 1.4rem;
+        min-height: 1.4rem;
+        cursor: pointer;
+        outline: none;
+        border: 2px solid #eeeeee;
+        border-radius: 10px;
+        background: #fbfbfb;
+    }
+    input[id="select-each"] {
+      border: 1px solid #686868;
+  }
+    input[type="checkbox"]::before {
+        content: "\2713";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        transform: scale(0) translate(-50%, -50%);
+        line-height: 1;
+        font-size: 0.8rem;
+    }
+ 
+    input[type="checkbox"]:checked {
+        background-color: #a269ff;
+        border-color: rgba(255, 255, 255, 0.3);
+        color: white;
+        font-weight: 900;
+    }
+ 
+    input[type="checkbox"]:checked::before {
+        border-radius: 10px;
+        transform: scale(1) translate(-50%, -50%)
+    }
+
+    #select-all,
+    #select-each {
+      margin: 3px 20px 4px 0;
+      transform: translateX(40px);
+    }
+
+    /* 페이지 표시 */
+    #page-container {
+      display: flex;
+      width: 1200px;
+      justify-content: flex-start;
+      margin: 0 auto;
+      padding-bottom: 5px;
+    }
+
+/* 버튼 디자인 */
+.btn-parent {
+  display: flex;
+  flex-basis: 900px;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.confirm-btn {
+  background-color: #6454E8;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 15px;
+  color: #fbfbfb;
+}
+
+/* 임시 footer */
+#footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  height: 150px;
+  color: white;
+  font-family: "Noto Sans thin";
+  font-size: 11px;
+  margin-top: 350px;
+  text-decoration: none;
+
+}
+
+.footer-ul {
+  display: flex;
+  flex-basis: 1100px;
+  margin: 10px auto;
+  letter-spacing: 2px;
+  padding: 10px 0 0 20px;
+}
+
+.vertical {
+  padding: 0 10px;
+}
+
+#inform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #333333;
+}
+
+.company-inform {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 수량 조절 디자인 */
+
+.fa-sharp.fa-solid.fa-circle-minus.fa-lg,
+.fa-sharp.fa-solid.fa-circle-plus.fa-lg {
+  cursor: pointer;
+}

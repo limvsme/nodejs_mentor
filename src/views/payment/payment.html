@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1440, initial-scale=1">
+    <title>::Is Wonderland</title>
+    <!--폰트-->
+    <link href="https://fonts.cdnfonts.com/css/sansita" rel="stylesheet">
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="payment.css">
+    <script type="text/javascript" src="payment.js" defer></script>
+  </head>
+
+  <body>
+    <!--상단내비-->
+        <header id="master-header">
+                 <nav class="nav-list">
+                    <ul>
+                        <li><a href="join.css">회원가입</a></li>
+                        <li><a href="login.css">로그인</a></li>
+                        <li><a href="mypage.css">마이페이지</a></li>
+                        <li><a href="cart.css">장바구니</a></li>
+                    </ul>
+             </nav>
+        </header>
+                        <h1><a href="index.html">Wonderland</a></h1>
+
+             <ul id="root-container">
+                <li class="root-list">
+                    <span class="shopping-cart">장바구니</span>
+                    <span>></span>
+                    <span class="order-purchase">주문결제</span>
+                    <span>></span>
+                     <span class="purchaes-complete">결제완료</span>
+                </li>
+            </ul>
+            <div class="upper-line"></div>
+
+
+        <div id="main-container">
+            <div class="address-container">
+                    <span class="address-list">배송지 정보</span>
+                <li>
+                    <span class="user-name">받으시는 분</span>
+                    <input class="name-input" placeholder="홍길동">
+                </li>
+
+                <li>
+                    <span class="user-number">연락처</span>
+                    <input class="number-input"  type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="010-0000-0000">
+                </li>
+                <li>
+                    <span class="user-address">주소</span>
+                    <input class="post-input" placeholder="01010">
+                    <button type="submit" class="post-search">주소찾기</button>
+                </li>
+                 <li><input class="first-address"></li>
+                 <li><input class="second-address" placeholder="동,호수 등 상세하게 기입해주세요."></li>
+
+                 <li>
+                     <span class="user-order">요청사항</span>
+                     <input class="order-input"  placeholder="ex) 부재시 경비실에 맡겨주세요">
+                 </li>
+            </div>
+
+            <div class="payment-container">
+                     <span class="payment-list">결제 정보</span>
+                <li class="order-list">
+                     <span class="item-list">주문상품</span>
+                     <span class="empty-order"></span>
+                     <span class="order-unit">권</span>
+                </li>   
+
+                <li class="price-list">
+                    <span class="total-price">상품 총액</span>
+                    <span class="empty-price"></span>
+                    <span class="price-unit">원</span>
+                </li>        
+              
+                <li class="delivery-list">
+                    <span class="delivery-price">배송비</span>
+                    <span class="empty-delivery"></span>
+                    <span class="delivery-unit">원</span>
+                </li>        
+
+                <div id="decision">
+                    <span class="total-cost">총 결제금액</span>
+                    <span class="empty-total"></span>
+                    <span class="total-unit">원</span>
+                    <button type="submit" class="order-button">전체상품 구매하기</button>
+                </div>
+            </div>
+        </div>
+     </div>
+    </body>
+</html>
+

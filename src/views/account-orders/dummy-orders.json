@@ -1,0 +1,35 @@
+{
+  "dummyData": [
+    {
+      "orderId": "1001",
+      "orderDate": "2023-07-08",
+      "orderState": "상품준비중",
+      "orderProductList": [
+        { "name": "도서1", "count": 2 },
+        { "name": "도서2", "count": 1 },
+        { "name": "도서3", "count": 3 }
+      ]
+    },
+    {
+      "orderId": "1002",
+      "orderDate": "2023-07-07",
+      "orderState": "배송준비중",
+      "orderProductList": [
+        { "name": "도서4", "count": 1 },
+        { "name": "도서5", "count": 2 }
+      ]
+    },
+    {
+      "orderId": "1003",
+      "orderDate": "2023-07-06",
+      "orderState": "배송중",
+      "orderProductList": [{ "name": "도서6", "count": 1 }]
+    },
+    {
+      "orderId": "1004",
+      "orderDate": "2023-07-06",
+      "orderState": "주문취소",
+      "orderProductList": [{ "name": "도서7", "count": 10 }]
+    }
+  ]
+}

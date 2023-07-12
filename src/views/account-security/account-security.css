@@ -1,0 +1,87 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/********** 네비 임시 날림 구현 **********/
+header {
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+header span {
+  margin-right: 10px;
+  color: #333333;
+}
+
+/********** 사이트 제목 **********/
+#title-div {
+  text-align: center;
+  margin: 40px auto;
+  color: #a269ff;
+  font-family: "Sansita", "Noto Sans KR", sans-serif;
+  font-style: italic;
+}
+
+#title-div > h1 {
+  font-size: 40px;
+}
+
+/********** 회원 정보 수정 폼 **********/
+#page-title-div {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#account-info-form {
+  width: 600px;
+  margin: 0px auto;
+  padding: 40px 40px;
+  text-align: left;
+}
+
+#account-info-form > p {
+  font-size: 12px;
+}
+
+#zip-code-input {
+  width: 100px;
+  display: inline;
+}
+
+#save-button {
+  width: 100%;
+  margin: 30px 0 10px 0;
+  text-align: center;
+  display: block;
+}
+
+/********** Bulma 오버라이딩하여 커스터마이징 **********/
+.box {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3);
+  border-radius: 16px;
+}
+
+.title.is-4 {
+  color: #333333;
+}
+
+.field.is-horizontal {
+  margin-bottom: 15px;
+}
+
+.label {
+  width: 100px;
+}
+
+.control {
+  margin-bottom: 8px;
+}
+
+.button.is-link {
+  background-color: #a269ff;
+}
+
+.button.is-link:hover {
+  background-color: #a269ff;
+}

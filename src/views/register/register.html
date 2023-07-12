@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>회원가입</title>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Sansita:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bulma, CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="register.css" />
+
+    <!-- javascript -->
+    <script defer type="module" src="register.js"></script>
+  </head>
+
+  <body>
+    <header id="navbar"></header>
+
+    <main>
+      <div id="welcome-text">
+        <h1>Wonderland</h1>
+        <span>에 오신 것을 환영합니다!</span>
+      </div>
+
+      <form id="register-form" class="box">
+        <div class="field">
+          <label class="label">이름(닉네임)</label>
+          <div class="control">
+            <input id="name-input" class="input" type="text" placeholder="엘리스" required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">아이디(이메일)</label>
+          <div class="control">
+            <input id="id-input" class="input" type="email" placeholder="elice@elice.com" required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">비밀번호</label>
+          <div class="control">
+            <input id="password-input" class="input" type="password" placeholder="8자 이상 입력해 주세요" required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">비밀번호 확인</label>
+          <div class="control">
+            <input
+              id="password-confirm-input"
+              class="input"
+              type="password"
+              placeholder="8자 이상 입력해 주세요"
+              required
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">연락처</label>
+          <div class="control">
+            <input id="phone-number-input" class="input" type="tel" placeholder="010-1234-1234" required />
+          </div>
+        </div>
+        <p>아래의 동의하고 가입하기 버튼을 클릭하면, <a>이용 약관</a> 및 <a>개인정보 취급방침</a>에 동의하게 됩니다.</p>
+
+        <div>
+          <button id="register-button" class="button is-link">동의하고 가입하기</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
